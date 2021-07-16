@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataClasses1">
+  <DataContextMoniker Name="/DataClasses1DataContext" />
+  <nestedChildShapes>
+    <classShape Id="cea7e8cd-c640-4f2c-b385-4576360d8084" absoluteBounds="0.75, 1.125, 2, 1.1939925130208338">
+      <DataClassMoniker Name="/DataClasses1DataContext/Theloaitin" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2d87d3ed-1825-411a-930e-2dc2117adb8e" absoluteBounds="0.765, 1.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0086bb49-d44d-4479-bee0-8b4dd98a302f" absoluteBounds="3.5, 0.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DataClasses1DataContext/Tintuc" />
+      <nestedChildShapes>
+        <elementListCompartment Id="be438a6c-9d44-4555-8bec-10b3e000591c" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 1.72199625651042); (3.5 : 1.72199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClasses1DataContext/Theloaitin/Theloaitin_Tintuc" />
+      <nodes>
+        <classShapeMoniker Id="cea7e8cd-c640-4f2c-b385-4576360d8084" />
+        <classShapeMoniker Id="0086bb49-d44d-4479-bee0-8b4dd98a302f" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

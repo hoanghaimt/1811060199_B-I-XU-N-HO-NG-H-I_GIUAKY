@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="TinTuc" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DESKTOP-4TTRBAO\SQLEXPRESS;Initial Catalog=TinTuc;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="TinTucConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Theloaitin" Member="Theloaitins">
+    <Type Name="Theloaitin">
+      <Column Name="Maloai" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Tentheloai" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Association Name="Theloaitin_Tintuc" Member="Tintucs" ThisKey="Maloai" OtherKey="Maloai" Type="Tintuc" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tintuc" Member="Tintucs">
+    <Type Name="Tintuc">
+      <Column Name="MaTin" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Tieudetin" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Noidungtin" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Maloai" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Theloaitin_Tintuc" Member="Theloaitin" ThisKey="Maloai" OtherKey="Maloai" Type="Theloaitin" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
